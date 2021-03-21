@@ -6,6 +6,7 @@ import { Transition } from './HelloWorld/Transition';
 import { FadeTransition } from './HelloWorld/FadeTrasition';
 import { Date } from './HelloWorld/Date';
 import logo from './logo.png';
+import { Desc } from './HelloWorld/Desc';
 
 export const HelloWorld: React.FC<{
 	titleText: string;
@@ -38,13 +39,21 @@ export const HelloWorld: React.FC<{
 					</FadeTransition>
 				</Sequence>
 
-				<Sequence from={transitionStart + 40} durationInFrames={40}>
+				<Sequence from={transitionStart + 40} durationInFrames={60}>
+					<FadeTransition type="in" duration={45}>
+						<FadeTransition type="out" duration={6}>
+							<Desc />
+						</FadeTransition>
+					</FadeTransition>
+				</Sequence>
+
+				<Sequence from={transitionStart + 100} durationInFrames={40}>
 					<Transition type="out">
 						<Subtitle />
 					</Transition>
 				</Sequence>
 
-				{/* CHANGE TO DATE */} <Sequence from={transitionStart + 80} durationInFrames={50}>
+				{/* CHANGE TO DATE */} <Sequence from={transitionStart + 140} durationInFrames={50}>
 					<Transition type="in">
 						<Transition type="out">
 							<Date />
@@ -52,7 +61,7 @@ export const HelloWorld: React.FC<{
 					</Transition>
 				</Sequence>
 
-				<Sequence from={transitionStart + 130} durationInFrames={75}>
+				<Sequence from={transitionStart + 190} durationInFrames={75}>
 					<FadeTransition type="in" duration={45}>
 						<FadeTransition type="out" duration={6}>
 							<img src={logo} width="800px" style={{ position: 'absolute', top: '15%', left: '30%' }} />

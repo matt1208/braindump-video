@@ -8,17 +8,17 @@ export const Date: React.FC = () => {
     <div
       style={{
         fontFamily: 'Roboto',
-        fontSize: 200,
+        fontSize: 250,
         textAlign: 'center',
         position: 'absolute',
         top: '40%',
         width: '100%',
-        color: '#FBB6CE',
+        color: '#0BC5EA',
         fontWeight: 'bold'
       }}
     >
       {/* Store All Your Thoughts In One Place */}
-			March Date
+			March 27th
     </div>
   );
 };
