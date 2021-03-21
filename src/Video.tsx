@@ -52,7 +52,7 @@ export const RemotionVideo: React.FC = () => {
 // };
 
 // const Main = () => {
-// 	const { fps, durationInFrames } = useVideoConfig();
+// 	const {  fps, durationInFrames } = useVideoConfig();
 // 	return (
 // 		<div style={{ backgroundColor: "#1A202C", flexGrow: 1 }}>
 // 			<Sequence from={0} durationInFrames={durationInFrames}>
