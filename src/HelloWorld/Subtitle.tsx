@@ -19,7 +19,7 @@ export const Subtitle: React.FC = () => {
 			}}
 		>
 			{/* Store All Your Thoughts In One Place */}
-			Launching On
+			Is Launching On
 		</div>
 	);
 };
