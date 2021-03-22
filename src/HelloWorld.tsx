@@ -40,11 +40,11 @@ export const HelloWorld: React.FC<{
 				</Sequence>
 
 				<Sequence from={transitionStart + 40} durationInFrames={60}>
-					<FadeTransition type="in" duration={45}>
+					<Transition type="in">
 						<FadeTransition type="out" duration={6}>
 							<Desc />
 						</FadeTransition>
-					</FadeTransition>
+					</Transition>
 				</Sequence>
 
 				<Sequence from={transitionStart + 100} durationInFrames={40}>
