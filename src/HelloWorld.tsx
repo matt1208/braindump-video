@@ -61,10 +61,10 @@ export const HelloWorld: React.FC<{
 					</Transition>
 				</Sequence>
 
-				<Sequence from={transitionStart + 190} durationInFrames={75}>
+				<Sequence from={transitionStart + 190} durationInFrames={80}>
 					<FadeTransition type="in" duration={45}>
 						<FadeTransition type="out" duration={6}>
-							<img src={logo} width="800px" style={{ position: 'absolute', top: '15%', left: '30%' }} />
+							<img src={logo} width="700px" style={{ position: 'absolute', top: '17%', left: '33%' }} />
 						</FadeTransition>
 					</FadeTransition>
 				</Sequence>
